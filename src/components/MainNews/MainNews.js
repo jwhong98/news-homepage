@@ -6,7 +6,13 @@ import desktopImg from "../../assets/images/image-web-3-desktop.jpg";
 const MainNews = () => {
   return (
     <section className={classes.mainContainer}>
-      <img className={classes.mainImg} src={mobileImg} alt="" />
+      <img
+        className={classes.mainImg}
+        srcSet={`
+      ${mobileImg} 768w, ${desktopImg} 1460w`}
+        sizes="(max-width: 450px), (max-width: 730px)"
+        alt=""
+      />
       <div className={classes.content}>
         <div className={classes.content__text}>
           <h1>The Bright Future of Web 3.0?</h1>

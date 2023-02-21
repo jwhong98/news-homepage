@@ -1,6 +1,18 @@
 @import "../../Styles/variables";
+@import "../../Styles/mixins";
 
 main {
   max-width: $maxWidth;
   margin: auto;
+}
+
+.top {
+  @include flexCol;
+  gap: 50px;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .top {
+    flex-direction: row;
+  }
 }

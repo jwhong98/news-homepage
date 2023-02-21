@@ -1,0 +1,52 @@
+@import "../../Styles/mixins";
+@import "../../Styles/variables";
+
+.new {
+  padding: 20px;
+  background: hsl(240, 100%, 5%);
+  h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 2rem;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &__article {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  hr {
+    height: 1px;
+    background-color: hsl(236, 13%, 42%);
+    border: none;
+  }
+}
+
+.title {
+  color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.description {
+  color: hsl(233, 8%, 79%);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .new {
+    &__content {
+      height: 100%;
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}

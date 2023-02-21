@@ -1,9 +1,10 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,IAAI,CAAC;EACH,SAAS,ECHA,MAAM;EDIf,MAAM,EAAE,IAAI;CACb",
+    "mappings": "AAGA,AAAA,IAAI,CAAC;EACH,SAAS,ECJA,MAAM;EDKf,MAAM,EAAE,IAAI;CACb;;AAED,AAAA,IAAI,CAAC;EEPH,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EAEtB,eAAe,EAAE,MAAM;EFMvB,GAAG,EAAE,IAAI;CACV;;AAED,MAAM,EAAE,SAAS,EAAE,MAAM;EACvB,AAAA,IAAI,CAAC;IACH,cAAc,EAAE,GAAG;GACpB",
     "sources": [
         "Main.module.scss",
-        "../../Styles/_variables.scss"
+        "../../Styles/_variables.scss",
+        "../../Styles/_mixins.scss"
     ],
     "names": [],
     "file": "Main.module.css"
