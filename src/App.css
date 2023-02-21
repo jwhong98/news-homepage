@@ -5,4 +5,14 @@
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+
+.App {
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .App {
+    padding: none;
+  }
+}
 /*# sourceMappingURL=App.css.map */
