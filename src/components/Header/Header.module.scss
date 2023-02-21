@@ -1,0 +1,15 @@
+@import "../../Styles/variables";
+
+header {
+  height: 80px;
+  padding: 0 20px;
+}
+
+.headerWrap {
+  margin: auto;
+  height: 100%;
+  max-width: $maxWidth;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

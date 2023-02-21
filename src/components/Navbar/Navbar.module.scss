@@ -1,0 +1,39 @@
+@import "../../Styles/mixins";
+@import "../../Styles/variables";
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: none;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .hamburger {
+    display: none;
+  }
+
+  .navList {
+    list-style: none;
+    @include flexCenterAlign;
+    gap: 20px;
+    color: hsl(236, 13%, 42%);
+
+    &__listItem {
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    &__listItem:hover {
+      color: hsl(5, 85%, 63%);
+    }
+  }
+}
