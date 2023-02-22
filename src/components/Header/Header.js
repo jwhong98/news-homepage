@@ -3,12 +3,12 @@ import classes from "./Header.module.css";
 import logo from "../../assets/images/logo.svg";
 import Navbar from "../Navbar/Navbar";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
       <div className={classes.headerWrap}>
         <img src={logo} alt="logo" />
-        <Navbar />
+        <Navbar onToggle={props.onToggle} />
       </div>
     </header>
   );
