@@ -2,8 +2,10 @@
 @import "../../Styles/variables";
 
 .new {
-  padding: 20px;
+  padding: 30px 20px;
   background: hsl(240, 100%, 5%);
+  max-width: $mobileMaxWidth;
+  margin: auto;
   h2 {
     color: hsl(35, 77%, 62%);
     font-size: 2rem;
@@ -31,6 +33,11 @@
   font-size: 1.25rem;
 }
 
+.title:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
 .description {
   color: hsl(233, 8%, 79%);
   font-size: 0.95rem;
@@ -39,11 +46,17 @@
 
 @media (min-width: $breakpoint-desktop) {
   .new {
+    max-width: unset;
+    margin: 0;
     &__content {
       height: 100%;
       gap: 0;
       justify-content: space-between;
     }
+  }
+
+  .title {
+    font-size: 1.2rem;
   }
 
   .description {

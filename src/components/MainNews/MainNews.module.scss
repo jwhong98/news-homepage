@@ -4,7 +4,7 @@
 .mainContainer {
   @include flexCol;
   gap: 20px;
-  max-width: 450px;
+  max-width: $mobileMaxWidth;
   margin: auto;
 }
 
@@ -36,6 +36,11 @@
       outline: none;
       border: none;
       letter-spacing: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: hsl(240, 100%, 5%);
     }
   }
 }

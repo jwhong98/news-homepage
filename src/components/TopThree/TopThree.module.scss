@@ -1,0 +1,59 @@
+@import "../../Styles/mixins";
+@import "../../Styles/variables";
+
+.topThree {
+  @include flexCol;
+  gap: 40px;
+  max-width: $mobileMaxWidth;
+  margin: auto;
+
+  &__entry {
+    display: flex;
+    gap: 20px;
+    img {
+      max-width: 30%;
+    }
+  }
+}
+
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2px 0;
+
+  &__number {
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: hsl(233, 8%, 79%);
+  }
+
+  &__title {
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  &__title:hover {
+    color: hsl(5, 85%, 63%);
+  }
+
+  &__description {
+    font-size: 0.9rem;
+    line-height: 1.75;
+    color: hsl(236, 13%, 42%);
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .topThree {
+    max-width: unset;
+    margin: 0;
+    flex-direction: row;
+  }
+
+  .textWrap {
+    &__description {
+      font-size: 1rem;
+    }
+  }
+}

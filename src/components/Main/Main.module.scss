@@ -9,10 +9,15 @@ main {
 .top {
   @include flexCol;
   gap: 50px;
+  margin-bottom: 50px;
+}
+
+.bottom {
 }
 
 @media (min-width: $breakpoint-desktop) {
   .top {
     flex-direction: row;
+    gap: 30px;
   }
 }
